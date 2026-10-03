@@ -1,0 +1,384 @@
+/* =====================================================
+   STUDENT CAREER & STUDY TRACKER
+   STEP 2 - CSS DESIGN
+   ===================================================== */
+
+
+/* ================= GENERAL SETTINGS ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+
+header p {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+
+/* ================= MAIN CONTENT ================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Dashboard Cards */
+
+.card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s;
+}
+
+
+/* Card Hover Effect */
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+.card h2 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+
+/* ================= COMMON SECTIONS ================= */
+
+.section {
+    background-color: white;
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.section h2 {
+    color: #4f46e5;
+    margin-bottom: 20px;
+}
+
+
+/* ================= TASK INPUT ================= */
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.task-input input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+.task-input input:focus {
+    outline: none;
+    border-color: #4f46e5;
+}
+
+
+/* Add Task Button */
+
+.task-input button {
+    padding: 12px 20px;
+
+    background-color: #4f46e5;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+
+.task-input button:hover {
+    background-color: #3730a3;
+}
+
+
+/* ================= TASK LIST ================= */
+
+#taskList {
+    list-style: none;
+}
+
+
+#taskList li {
+    background-color: #f4f7fb;
+
+    padding: 12px 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #4f46e5;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skill {
+    margin-bottom: 20px;
+}
+
+
+.skill p {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+
+/* Progress Bar Background */
+
+.progress {
+    width: 100%;
+    height: 25px;
+
+    background-color: #e5e7eb;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+/* Common Progress Style */
+
+.progress div {
+    height: 100%;
+
+    color: white;
+
+    text-align: right;
+
+    padding-right: 10px;
+
+    line-height: 25px;
+
+    font-size: 13px;
+
+    border-radius: 20px;
+}
+
+
+/* HTML Progress */
+
+.html {
+    width: 80%;
+    background-color: #e34c26;
+}
+
+
+/* CSS Progress */
+
+.css {
+    width: 70%;
+    background-color: #264de4;
+}
+
+
+/* JavaScript Progress */
+
+.javascript {
+    width: 60%;
+    background-color: #d6b600;
+}
+
+
+/* Python Progress */
+
+.python {
+    width: 50%;
+    background-color: #3776ab;
+}
+
+
+/* SQL Progress */
+
+.sql {
+    width: 60%;
+    background-color: #6b21a8;
+}
+
+
+/* ================= GOALS & LEARNING PLAN ================= */
+
+.goals {
+    list-style: none;
+}
+
+
+.goals li {
+    background-color: #f4f7fb;
+
+    padding: 12px 15px;
+
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #7c3aed;
+}
+
+
+/* Add check mark */
+
+.goals li::before {
+    content: "✓ ";
+
+    color: #4f46e5;
+
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #1f2937;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+
+/* Tablet */
+
+@media (max-width: 800px) {
+
+    .dashboard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    main {
+        width: 95%;
+    }
+
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+
+    .task-input {
+        flex-direction: column;
+    }
+
+
+    .task-input button {
+        width: 100%;
+    }
+
+
+    header h1 {
+        font-size: 24px;
+    }
+
+
+    header p {
+        font-size: 15px;
+    }
+
+}

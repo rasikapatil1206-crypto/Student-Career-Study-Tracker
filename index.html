@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic information about the webpage -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Name shown in the browser tab -->
+    <title>Student Career & Study Tracker</title>
+
+    <!-- Connect HTML with CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>🎓 Student Career & Study Tracker</h1>
+
+        <p>Computer Engineering - 3rd Year</p>
+
+        <p>
+            Track your studies, technical skills and career goals
+        </p>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section class="dashboard">
+
+            <!-- Subjects Card -->
+            <div class="card">
+
+                <h2>📚</h2>
+
+                <h3>Subjects</h3>
+
+                <p>5</p>
+
+            </div>
+
+
+            <!-- Skills Card -->
+            <div class="card">
+
+                <h2>💻</h2>
+
+                <h3>Skills</h3>
+
+                <p>6</p>
+
+            </div>
+
+
+            <!-- Goals Card -->
+            <div class="card">
+
+                <h2>🎯</h2>
+
+                <h3>Goals</h3>
+
+                <p>3</p>
+
+            </div>
+
+
+            <!-- Progress Card -->
+            <div class="card">
+
+                <h2>📈</h2>
+
+                <h3>Progress</h3>
+
+                <p>65%</p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= STUDY TASKS ================= -->
+
+        <section class="section">
+
+            <h2>📝 Today's Study Tasks</h2>
+
+
+            <!-- Input area -->
+
+            <div class="task-input">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your study task"
+                >
+
+
+                <button onclick="addTask()">
+                    Add Task
+                </button>
+
+            </div>
+
+
+            <!-- Tasks will appear here -->
+
+            <ul id="taskList">
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- ================= TECHNICAL SKILLS ================= -->
+
+        <section class="section">
+
+            <h2>💻 Technical Skills</h2>
+
+
+            <!-- HTML Skill -->
+
+            <div class="skill">
+
+                <p>HTML - 80%</p>
+
+                <div class="progress">
+
+                    <div class="html">
+                        80%
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CSS Skill -->
+
+            <div class="skill">
+
+                <p>CSS - 70%</p>
+
+                <div class="progress">
+
+                    <div class="css">
+                        70%
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- JavaScript Skill -->
+
+            <div class="skill">
+
+                <p>JavaScript - 60%</p>
+
+                <div class="progress">
+
+                    <div class="javascript">
+                        60%
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Python Skill -->
+
+            <div class="skill">
+
+                <p>Python - 50%</p>
+
+                <div class="progress">
+
+                    <div class="python">
+                        50%
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SQL Skill -->
+
+            <div class="skill">
+
+                <p>SQL - 60%</p>
+
+                <div class="progress">
+
+                    <div class="sql">
+                        60%
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CAREER GOALS ================= -->
+
+        <section class="section">
+
+            <h2>🎯 Career Goals</h2>
+
+
+            <ul class="goals">
+
+                <li>
+                    Improve programming skills
+                </li>
+
+                <li>
+                    Build 3 good projects
+                </li>
+
+                <li>
+                    Learn Git and GitHub
+                </li>
+
+                <li>
+                    Prepare for placement
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- ================= PROJECT GOALS ================= -->
+
+        <section class="section">
+
+            <h2>🚀 Project Goals</h2>
+
+
+            <ul class="goals">
+
+                <li>
+                    Complete beginner projects
+                </li>
+
+                <li>
+                    Build one full-stack project
+                </li>
+
+                <li>
+                    Upload projects to GitHub
+                </li>
+
+                <li>
+                    Create a strong portfolio
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- ================= LEARNING PLAN ================= -->
+
+        <section class="section">
+
+            <h2>📖 Current Learning Plan</h2>
+
+
+            <ul class="goals">
+
+                <li>
+                    HTML & CSS
+                </li>
+
+                <li>
+                    JavaScript
+                </li>
+
+                <li>
+                    Python
+                </li>
+
+                <li>
+                    SQL & DBMS
+                </li>
+
+                <li>
+                    Git & GitHub
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            Made by a Computer Engineering Student 👩‍💻
+        </p>
+
+        <p>
+            Student Career & Study Tracker
+        </p>
+
+    </footer>
+
+
+
+    <!-- Connect HTML with JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
